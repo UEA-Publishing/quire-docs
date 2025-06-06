@@ -22,6 +22,8 @@ python -m SimpleHTTPServer 8000
 
 If that process runs smoothly, then you can proceed with the deployment process by using of the three following options: [Basic Deploy](#basic-deploy), [Netlify](#netlify), or [GitHub Pages](#github-pages).
 
+If the error "No module named SimpleHTTPServer" occurs then it is because the SimpleHTTPServer module has been removed in Python 3 and replaced by the http.server module. To start a simple HTTP server in Python 3, use the command python -m http.server 8000 instead.
+
 ## Basic Deploy
 
 When hosting a Quire site, you will typically follow these steps:
